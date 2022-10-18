@@ -1,0 +1,173 @@
+body, .main {
+    background:#0a192f;
+}
+
+header {
+    background:#0a192f;
+    box-shadow:rgba(0, 0, 0, 0.08) 0px 5px 10px 0px;
+}
+
+.nav-desktop {
+    background:#0a192f;
+}
+
+.nav-desktop .logo-desktop {
+    color: #64ffda;
+    cursor: pointer;
+}
+
+.nav-items-desktop a {
+    color: #8892b0;
+}
+
+.nav-items-desktop a:hover {
+    color: #64ffda;
+    transition: .3s;
+}
+
+.side-element-left::after {
+    background:#8892b0;
+}
+
+.side-element-left ul li a {
+    color: #8892b0;
+}
+
+.side-element-left ul li a:hover {
+    color: #64ffda;
+    transition: .2s;
+}
+
+#greet {
+    color: #64ffda;
+}
+
+#name {
+    color: #ccd6f6;
+}
+
+#intro-statement {
+    color: #8892b0;
+}
+
+#overview {
+    color: #8892b0;
+}
+
+.contact-btn {
+    border-color: #64ffda;
+    color: #64ffda;
+}
+
+.contact-btn:hover {
+    background:#8892b0;
+    color: #64ffda;
+    border-color: #8892b0;
+    transition: 0.3s ease;
+}
+
+.hero-card {
+    background: #172a45;
+    color:#64ffda;
+}
+
+.section-title, .section-title-center{
+    color: #ccd6f6;
+}
+
+.section-id {
+    color: #64ffda;
+}
+
+.section-title::after {
+    background:#8892b0;
+}
+
+.about-me {
+    color: #8892b0;
+}
+
+.img-container::after {
+    border-color: #64ffda;
+}
+
+.img-container::before {
+    background:#64ffda;
+}
+
+.scattered p {
+    color: #8892b0;
+}
+
+.overlay::before {
+    background: #64ffda;
+}
+
+.project-detail h3 {
+    color: #ccd6f6;
+}
+
+.project-desp {
+    background: #172a45;
+    color: #8892b0;
+}
+
+.tech-stack {
+    color: #8892b0;
+}
+
+.project-links a{
+    color: #ccd6f6;
+}
+
+.project-links a:hover {
+    color: #64ffda;
+    transition: .2s;    
+}
+
+.o-p-container {
+    background:#172a45;
+}
+
+.fa-terminal, .fa-folder-open-o {
+    color: #64ffda;
+}
+
+.o-p-links a {
+    color: #ccd6f6;
+}
+
+.o-p-title {
+    color: #ccd6f6;
+}
+
+.o-p-desp p {
+    color: #8892b0;
+}
+
+.o-p-tech li {
+    color: #ccd6f6;
+}
+
+.contact-info {
+    color: #8892b0;
+}
+
+footer p {
+    color: #64ffda;
+}
+
+.contact-section .contact-section-links li a{
+    color: #64ffda;
+}
+
+.nav-mobile a {
+    color: #ccd6f6;
+}
+.nav-mobile.active {
+    background:#0a192f;
+}
+
+.ham-btn span {
+    background: #64ffda;
+}

@@ -1,0 +1,176 @@
+body, .main {
+    background:#f8f8f8;
+}
+
+header {
+    background:#f8f8f8;
+    box-shadow:rgba(0, 0, 0, 0.03) 0px 5px 10px 0px;
+}
+
+.nav-desktop {
+    background:#f8f8f8;
+}
+
+.nav-desktop .logo-desktop {
+    color: #383838;
+    cursor: pointer;
+}
+
+.nav-items-desktop a {
+    color: #383838;
+}
+
+.nav-items-desktop a:hover {
+    color: #595959;
+    transition: .3s;
+}
+
+.side-element-left::after {
+    background:#8892b0;
+}
+
+.side-element-left ul li a {
+    color: #585757;
+}
+
+.side-element-left ul li a:hover {
+    color: #383838;
+    transition: .2s;
+}
+
+#greet {
+    color: #585757;
+}
+
+#name {
+    color:#383838;
+}
+
+#intro-statement {
+    color: #585757;
+}
+
+#overview {
+    color: #585757;
+}
+
+.contact-btn {
+    border-color: #585757;
+    color: #585858;
+}
+
+.contact-btn:hover {
+    background:#585757;
+    color: #faf8f8;
+    border-color: #585757;
+    transition: 0.3s ease;
+}
+
+.hero-card {
+    background: #faf8f8;
+    color:#383838;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 10px 0px;
+}
+
+.section-title, .section-title-center{
+    color:#383838;
+}
+
+.section-id {
+    color: #383838;
+}
+
+.section-title::after {
+    background:#8892b0;
+}
+
+.about-me {
+    color: #585757;
+}
+
+.img-container::after {
+    border-color: #ccd6f6;
+}
+
+.img-container::before {
+    background:#faf8f8;
+}
+
+.scattered p {
+    color: #8892b0;
+}
+
+.overlay::before {
+    background: #faf8f8;
+}
+
+.project-detail h3 {
+    color: #383838;
+}
+
+.project-desp {
+    background: #faf8f8;
+    color: #585757;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 0px;;
+}
+
+.tech-stack {
+    color: #585757;
+}
+
+.project-links a{
+    color: #585858;
+}
+
+.project-links a:hover {
+    color: #64ffda;
+    transition: .2s;    
+}
+
+.o-p-container {
+    background: #faf8f8;;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 0px;
+}
+
+.fa-terminal, .fa-folder-open-o {
+    color: #383838;
+}
+
+.o-p-links a {
+    color: #585757;
+}
+
+.o-p-title {
+    color: #585757;
+}
+
+.o-p-desp p {
+    color: #595959;
+}
+
+.o-p-tech li {
+    color: #595959;
+}
+
+.contact-info {
+    color: #585757;
+}
+
+footer p {
+    color: #383838;
+}
+
+.contact-section .contact-section-links li a{
+    color: #595959;
+}
+
+.nav-mobile a {
+    color: #585757;
+}
+.nav-mobile.active {
+    background:#faf8f8;
+}
+
+.ham-btn span {
+    background: #383838;
+}
