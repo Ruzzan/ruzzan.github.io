@@ -236,6 +236,25 @@ main {
     border-radius: 50%;
     cursor: pointer;
     margin: 0 1em 0 0;
+    animation: themepopup 3s ease-in-out infinite;
+}
+
+@keyframes themepopup {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .themes div:hover {
@@ -794,11 +813,11 @@ footer p {
         margin: 0.5em 0;
     }
 
-    .scattered p:nth-child(2) { top: 0%; left: 5%; font-size: 2rem;}
-    .scattered p:nth-child(3) { top: 35%; left: 60%; font-size: 1.3rem;}
+    .scattered p:first-child { top: 0%; left: 5%; font-size: 2rem;}
+    .scattered p:nth-child(2) { top: 35%; left: 60%; font-size: 1.3rem;}
     .scattered p:nth-child(3) { top: 75%; left: 60%; font-size: 1.3rem;}
-    .scattered p:nth-child(4) { top: 35%; left:15%; font-size: 1.3rem;}
-    .scattered p:nth-child(5) { top: 35%; left: 30%; font-size: 1.3rem;}
+    .scattered p:nth-child(4) { top: 30%; left:10%; font-size: 1.3rem;}
+    .scattered p:nth-child(5) { top: 50%; left: 30%; font-size: 1.3rem;}
     .scattered p:nth-child(6) { top:10%; left: 50%; font-size: 1.3rem;}
     .scattered p:nth-child(7) { top: 70%; left: 10%; font-size: 2rem;}
     .scattered p:last-child { top: 3%; left: 75%; font-size: 2rem;}
