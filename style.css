@@ -185,6 +185,7 @@ main {
     padding: 0.8em 1em;
     font-size: 1em;
     border-radius:0.5em;
+    width: 100%;
 }
 
 .hero-card .buttons {
@@ -265,6 +266,27 @@ main {
 .themes div:nth-child(1) { background:rgb(238, 237, 237); }
 .themes div:nth-child(2) { background: #0a192f; }
 .themes div:nth-child(3) { background: #383838; }
+
+.code-line {white-space: pre;margin-bottom: 8px;}
+.keyword { color: #569cd6; }
+.class-name { color: #4ec9b0; }
+.function-name { color: #dcdcaa; }
+.string { color: #ce9178; }
+.number { color: #b5cea8; }
+.boolean { color: #569cd6; }
+.type { color: #4ec9b0; }
+.highlight { color: #dcdcaa; }
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: #d4d4d4;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    0%, 100% { background: #d4d4d4; }
+    50% { background: transparent; }
+}
 
 .section-title-center {
     text-align: center;
