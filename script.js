@@ -54,6 +54,37 @@ for(let i=0;i<navItems.length;i++) {
 }
 
 
+  const codeLines = [
+  '<span class="code-line">1&nbsp;<span class="keyword">from</span> datetime <span class="keyword">import</span> date</span>',
+  '<span class="code-line">2&nbsp;<span class="keyword">class</span> <span class="class-name">Human</span>:</span>',
+  '<span class="code-line">3&nbsp;<span class="keyword">def</span> <span class="function-name">__init__</span>(self, name, **kwargs):</span>',
+  '<span class="code-line">4    self.name = <span class="string">"Rujan Tandukar"</span></span>',
+  '<span class="code-line">5    self.age = date.today(&nbsp;).year - <span class="number">2002</span></span>',
+  '<span class="code-line">6    self.love = <span class="string">"Backend"</span></span>',
+  '<span class="code-line">7    self.coffee = <span class="string">"Liquid sanity"</span></span>',
+  '<span class="code-line">8    self.mortal = <span class="boolean">True</span></span>',
+];
+
+const container = document.getElementById('code-container');
+let i = 0;
+
+function typeLine() {
+  if (i < codeLines.length) {
+    container.innerHTML += `<div class="code-line">${codeLines[i]}</div>`;
+    i++;
+    setTimeout(typeLine, 300);
+  }
+}
+
+container.innerHTML = '<span class="typing-cursor"></span>';
+window.onload = () => {
+  setTimeout(() => {
+  container.innerHTML = '';
+  typeLine();
+}, 1500);
+}
+
+
 
 
 
