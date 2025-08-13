@@ -177,6 +177,7 @@ main {
     margin-top: 0.5em;
     font-family: Roboto Mono;
     border-radius: 0.2em;
+    background: transparent;
 }
 
 .hero-card {
@@ -402,6 +403,10 @@ main {
     position: relative;
 }
 
+@keyframes beat{
+	to { transform: scale(0.95); }
+}
+
 .skill-flex {
     display: flex;
     justify-content: space-between;
@@ -412,36 +417,41 @@ main {
     height: 5.4rem;
     width: 5.4rem;
     margin: 0 0.4em;
+    animation: beat 2.5s infinite alternate;
+	transform-origin: center;
 }
 
 .scattered {
     position: absolute;
-    top: 0;
+    top: -1rem;
     bottom: 0;
-    right: 0;
     left: 0;
-    padding: 4rem 0;
+    right: 0;
+    padding: 1rem;
 }
 
-.scattered p {
+.scattered span {
     position: absolute;
-    font-family: Montserrat;
+}
+.scattered svg {
+    height: 5.4rem;
+    width: 5.4rem;
+    margin: 0 0.4em;
+    animation: beat 3s infinite alternate;
+	transform-origin: center;
 }
 
-.scattered p:first-child {
-    top: 55%;
-    left: 70%;
-    font-size: 2rem;
-}
-
-.scattered p:nth-child(2) { top: 0%; left: 5%; font-size: 2rem;}
-.scattered p:nth-child(3) { top: 10%; left: 90%; font-size: 1.3rem;}
-.scattered p:nth-child(3) { top: 10%; left: 90%; font-size: 1.3rem;}
-.scattered p:nth-child(4) { top: 30%; left: 20%; font-size: 1.3rem;}
-.scattered p:nth-child(5) { top: 50%; left: 40%; font-size: 1.3rem;}
-.scattered p:nth-child(6) { top: 50%; left: 90%; font-size: 1.3rem;}
-.scattered p:nth-child(7) { top: 60%; left: 10%; font-size: 2rem;}
-.scattered p:last-child { top: 3%; left: 75%; font-size: 2rem;}
+.scattered span:nth-child(1)  {top: 65%;  left: 1%;}
+.scattered span:nth-child(2)  {top: 30%; left: 45%;}
+.scattered span:nth-child(3)  {top: 20%; left: 80%;}
+.scattered span:nth-child(4)  {top: 35%; left: 10%;}
+.scattered span:nth-child(5)  {top: 45%; left: 65%;}
+.scattered span:nth-child(6)  {top: 55%; left: 30%;}
+.scattered span:nth-child(7)  {top: 60%; left: 85%;}
+.scattered span:nth-child(8)  {top: 70%; left: 50%;}
+.scattered span:nth-child(9)  {top: 75%; left: 15%;}
+.scattered span:nth-child(10) {top: 85%; left: 70%;}
+.scattered span:nth-child(11) {top: 40%; left: 90%;}
 
 .project-section {
     width: 100%;
@@ -629,6 +639,8 @@ main {
 
 #contact-btn-last {
     margin: 1.5em auto;
+    width: 30%;
+    cursor: pointer;
 }
 
 
@@ -645,6 +657,38 @@ main {
 
 .contact-section .contact-section-links {
     display: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.contact-form input {
+    width: 50%;
+    height: 2rem;
+    padding: 0.5rem 0.2em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #64ffda;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #64ffda;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1rem;
+    height: 4rem;
 }
 
 footer  {
@@ -822,27 +866,38 @@ footer p {
         margin:0.8em 0;
     }
     .scattered {
-        position: absolute;
-        top: 45%;
-        padding: 0;
-        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* allow multiple rows */
+        gap: 1rem;
+        margin: 5rem 0;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .scattered span {
+        flex: 1 1 calc(25% - 1rem); /* 4 spans per row accounting for gap */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .scattered span svg {
         width: 100%;
         height: auto;
-        display: block;
+        max-width: 4rem; /* optional: control SVG size */
     }
-    .scattered p {
-        font-size: 1.1em !important;
-        margin: 0.5em 0;
-    }
-
-    .scattered p:first-child { top: 0%; left: 5%; font-size: 2rem;}
-    .scattered p:nth-child(2) { top: 35%; left: 60%; font-size: 1.3rem;}
-    .scattered p:nth-child(3) { top: 75%; left: 60%; font-size: 1.3rem;}
-    .scattered p:nth-child(4) { top: 30%; left:10%; font-size: 1.3rem;}
-    .scattered p:nth-child(5) { top: 50%; left: 30%; font-size: 1.3rem;}
-    .scattered p:nth-child(6) { top:10%; left: 50%; font-size: 1.3rem;}
-    .scattered p:nth-child(7) { top: 70%; left: 10%; font-size: 2rem;}
-    .scattered p:last-child { top: 3%; left: 75%; font-size: 2rem;}
+    /* .scattered span:nth-child(1)  {top: 0%;  left:1%;}
+    .scattered span:nth-child(2)  {top: 0%; left: 20%;}
+    .scattered span:nth-child(3)  {top: 0%; left: 60%;}
+    .scattered span:nth-child(4)  {top: 20%; left: 0%;}
+    .scattered span:nth-child(5)  {top: 20%; left: 5%;}
+    .scattered span:nth-child(6)  {top: 20%; left: 0%;}
+    .scattered span:nth-child(7)  {top: 50%; left: 5%;}
+    .scattered span:nth-child(8)  {top: 50%; left: 0%;}
+    .scattered span:nth-child(9)  {top: 50%; left: 5%;}
+    .scattered span:nth-child(10) {top: 80%; left: 0%;}
+    .scattered span:nth-child(11) {top: 8%; left: 0%;} */
     
     .project-section {
         height: auto;
@@ -917,6 +972,48 @@ footer p {
         font-size: 1.1em;
     }
 
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.contact-form input {
+    width: 90%;
+    height: 2rem;
+    padding: 0.5rem 0.2em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #64ffda;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #64ffda;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1rem;
+    height: 4rem;
+}
+
+#contact-btn-last {
+    margin: 1.5rem 0;
+    width: 90%;
+    cursor: pointer;
+}
+
+footer {
+    margin: 10rem 0 1rem 0;
+}
     footer p{
         font-size: 0.8em;
     }
