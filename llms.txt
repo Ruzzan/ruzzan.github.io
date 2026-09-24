@@ -1,0 +1,11 @@
+# Rujan Tandukar
+
+> Rujan Tandukar is a backend engineer based in Kathmandu, Nepal. This is his personal portfolio site (rujantandukar.com.np).
+
+The site is a single page with sections for About, Skills, Projects and Contact.
+
+## Links
+
+- [Portfolio](https://rujantandukar.com.np/): Main site with about, skills, projects and contact form
+- [Blog](https://ruzan.hashnode.dev/): Articles on Hashnode
+- [GitHub](https://github.com/ruzzan): Open source code and projects
